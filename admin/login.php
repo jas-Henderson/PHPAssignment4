@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($pass, $row['password'])) {
             $_SESSION['admin_logged_in'] = true;
             $_SESSION['admin_user'] = $row['username'];
-            header("Location: adminindex.php");
+            header("Location: projectManager.php");
             exit;
         } else {
             $error = "❌ Incorrect password.";

@@ -166,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <p>Customer not found.</p>
         <?php endif; ?>
 
-        <a href="searchCustomer.php">← Search Customers</a>
+        <a href="customerList.php">← Search Customers</a>
     </div>
 
     <div class="footer">
