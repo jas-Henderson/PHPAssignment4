@@ -1,10 +1,24 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+session_start();
+if (!isset($_SESSION['admin_logged_in'])) {
+    header("Location: login.php");
+    exit;
+}
+
 require_once __DIR__ . '/../data/db.php';
 
+$query = $conn->query('SELECT * FROM products ORDER BY name');
 
-// Get all products
-$query = $db->query('SELECT * FROM products ORDER BY name');
-$products = $query->fetchAll();
+if (!$query) {
+    die("Database query failed: " . $conn->error);
+}
+
+
+$products = $query->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +27,11 @@ $products = $query->fetchAll();
     <title>Product Management</title>
 </head>
 <body>
-    <h1>Products</h1>
+    <h1>Welcome, <?= htmlspecialchars($_SESSION['admin_user']) ?>!</h1>
+    <p><a href="logout.php">Logout</a></p>
+    <a href="projectManager.php">🏠 Home</a> |
+
+    <h2>Products</h2>
     <a href="addProducts.php">Add New Product</a>
     <table cellpadding="8">
         <tr>
