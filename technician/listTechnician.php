@@ -54,6 +54,7 @@ $result = $conn->query($sql);
                 </tr>
             <?php endwhile; ?>
         </table>
+        <a href="logout.php">Log Out</a>
     <?php else: ?>
         <p>No technicians found.</p>
     <?php endif; ?>

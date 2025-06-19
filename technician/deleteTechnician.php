@@ -10,5 +10,5 @@ if ($techID) {
     $stmt->execute();
 }
 
-header("Location: listTechnicians.php");
+header("Location: listTechnician.php");
 exit;

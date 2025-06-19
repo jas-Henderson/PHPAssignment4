@@ -59,6 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
         <button type="submit" name="update">Update Technician</button>
     </form>
 
-    <br><a href="listTechnicians.php">← Back to Technician List</a>
+    <br><a href="listTechnician.php">← Back to Technician List</a>
 </body>
 </html>

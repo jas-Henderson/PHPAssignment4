@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['tech_logged_in'] = true;
         $_SESSION['techID'] = $tech['techID'];
         $_SESSION['techName'] = $tech['firstName'] . ' ' . $tech['lastName'];
-        header("Location: /book_apps/sportsprotech/technicians/listTechnicians.php");
+        header("Location: listTechnician.php");
         exit;
     } else {
         $error = "Invalid email or password.";
