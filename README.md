@@ -1,37 +1,47 @@
-PHPAssignment2
-Repository for PHP Assignment 2
+# PHPAssignment2 - SportsProTech
 
-SportsProTech
-SportsProTech is a PHP-based web application designed to manage various user roles such as admin, customer, and technician. The project includes features for product management, user authentication, and a clean, organized structure for handling sports-related services.
+**SportsProTech** is a PHP-based web application built for managing user roles such as **Admin**, **Customer**, and **Technician**. It includes essential features for product management, secure user authentication, and a clean modular structure ideal for handling sports-related services and tasks.
 
-Features
-Admin panel for managing products and users
-Customer login and dashboard
-Technician login and task management
-Modular folder structure for easy maintenance
-Responsive and user-friendly interface
-Project Structure
-/admin - Admin-related pages and functions /customer - Customer login and user interface /technician - Technician login and task management /assets - CSS, JavaScript, and image assets /data - Database connection and utility scripts index.php - Main entry point of the application
+---
 
-Installation
-Clone the repository:
-git clone https://github.com/jas-Henderson/PHPAssignment2.git
+## 🚀 Features
 
-2.	Navigate to the project directory:
-cd sportsprotech
-	3.	Make sure you have PHP and a web server installed (e.g., XAMPP).
-	4.	Configure your database connection in /data/db.php.
-	5.	Launch your web server and access the project via your browser.
+- 🔐 Admin panel for managing products and users  
+- 👤 Customer login and personalized dashboard  
+- 🛠️ Technician login and task management  
+- 🗂️ Modular folder structure for easy maintenance  
+- 📱 Responsive and user-friendly interface
 
-Usage
-	•	Access the admin panel by navigating to /admin and logging in with your admin credentials.
-	•	Customers and technicians have their respective login portals at /customer and /technician.
-	•	Use the admin panel to add, edit, or delete products and manage users.
+---
 
-Contributing
+## 🧱 Project Structure
+/admin       → Admin-related pages and functions
+/customer    → Customer login and UI
+/technician  → Technician login and task management
+/assets      → CSS, JavaScript, and image assets
+/data        → Database connection and utility scripts
+index.php    → Main entry point of the application
 
-Contributions are welcome! Feel free to open issues or submit pull requests.
+This project is licensed under the Apache License 2.0. See the MIT file for details.
+---
 
-## License
+## ⚙️ Installation
 
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/jas-Henderson/PHPAssignment2.git
+
+   cd PHPAssignment2
+
+   	3.	Ensure PHP and a web server are installed (e.g., XAMPP, WAMP, or MAMP)
+	4.	Configure your database
+Update /data/db.php with your local database connection settings.
+	5.	Launch the project
+Start your server and visit http://localhost/PHPAssignment2 in your browser.
+
+## 🧪 Usage
+	•	🔑 Admin Panel: Navigate to /admin and log in with admin credentials to manage products and users.
+	•	👥 Customer Portal: Accessible via /customer for customers to manage their services.
+	•	🔧 Technician Portal: Accessible via /technician for technicians to view and manage assigned tasks.
+
+⸻
